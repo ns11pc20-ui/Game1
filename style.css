@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#loading {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px white;
+    animation: l 4s linear infinite;
+}
+
+@keyframes l {
+    0% {
+        font-size: 40px;
+    }
+
+    50% {
+        font-size: 80px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    display: none;
+}
+
+#top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid red;
+    color: red;
+    text-shadow: 2px 2px 5px orange;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px orange;
+    cursor: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Mout {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+#Mout div {
+    width: 20%;
+    padding-top: 20%;
+    border: 3px solid red;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px orange;
+}
+
+#gameoverbox {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+
+#gameoverbox #logo {
+    color: red;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 5px orange;
+}
+
+#gameoverbox #scr {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+#gameoverbox #n {
+    display: inline-block;
+}
+
+button {
+    width: 50%;
+    padding: 2% 0px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: orange;
+    background-color: red;
+    box-shadow: inset 0px 0px 15px orange, 0px 0px 10px orange;
+    border: none;
+    border-radius: 10px;
+}
+
+#gameoverbox button:hover {
+    color: red;
+    background-color: orange;
+    box-shadow: inset 0px 0px 15px red, 0px 0px 10px red;
+}
